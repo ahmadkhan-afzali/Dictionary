@@ -4,7 +4,7 @@ import React from 'react'
 const App = () => {
   return (
     <View>
-      <Text style={{color:"blue"}}>Uzbek to Dari Dictionary</Text>
+      <Text style={{color:"blue"}}>Uzbek To Dari Dictionary 11 May 2025</Text>
     </View>
   )
 }
