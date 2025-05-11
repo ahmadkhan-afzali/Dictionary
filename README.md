@@ -1,3 +1,18 @@
+
+echo "# UzbekDictionary" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/ahmadkhan-afzali/UzbekDictionary.git
+git push -u origin main
+
+/////
+git remote add origin https://github.com/ahmadkhan-afzali/UzbekDictionary.git
+git branch -M main
+git push -u origin main
+
+
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 # Getting Started
