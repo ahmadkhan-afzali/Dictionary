@@ -1,14 +1,14 @@
+import { StyleSheet, Text, View } from 'react-native'
+import React from 'react'
 
-import React from "react";
-import { View,Text } from "react-native";
-
-const App =()=>{
-  return(
-<View>
-
-  <Text style={{backgroundColor:"blue", fontFamily:""}}> Hi</Text>
-  
-  </View>
+const App = () => {
+  return (
+    <View>
+      <Text style={{color:"blue"}}>uzbeki Dictionary</Text>
+    </View>
   )
 }
-  export default App;
+
+export default App
+
+const styles = StyleSheet.create({})
