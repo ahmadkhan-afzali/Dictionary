@@ -52,10 +52,10 @@ export default App
 // 3rd way of styling in stylesheet.-> is best option for longer coding.
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    // flex: 1,
     width: "100%",
     height: "100%",
-    backgroundColor: "#666",
+    backgroundColor: "#778",
     gap:10,
     // justifyContent:"center",
     // alignItems:"center",
@@ -74,7 +74,9 @@ const styles = StyleSheet.create({
     backgroundColor: "blue",
     width: "40%",
     padding: 20,
-    borderRadius:20,
+    borderRadius:50,
+    borderWidth:10,
+    borderColor:"black",
     // paddingHorizontal:7,
     // paddingVertical:7,
     justifyContent: "center",
@@ -85,7 +87,7 @@ const styles = StyleSheet.create({
   touchblHighltBtn: {
     backgroundColor: "red",
     padding: 10,
-    borderRadius:20,
+    borderRadius:"50%",
     justifyContent: "center",
     alignItems: "center",
     width: 100,
