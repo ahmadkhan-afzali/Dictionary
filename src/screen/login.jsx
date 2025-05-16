@@ -11,13 +11,17 @@ const login = () => {
   const theme = useColorScheme();
   const isDarkMode = theme === 'dark';
 
-  const backgroundColor = isDarkMode ? 'black' : 'white';
-  const textColor = isDarkMode ? 'white' : 'black';
+  const backgroundColor = isDarkMode ? 'white' : 'black';
+  const textColor = isDarkMode ? 'black' : 'white';
+  const viewColor = isDarkMode ? 'yellow' : 'blue';
+
+
 
   return (
     <SafeAreaView
       style={[styles.container, {backgroundColor: backgroundColor}]}>
       <Text style={[styles.textColor, {color: textColor}]}>Login</Text>
+      <View style={[styles.viewColor, {backgroundColor: viewColor}]} />
     </SafeAreaView>
   );
 };
@@ -38,4 +42,8 @@ const styles = StyleSheet.create({
     fontSize: 30,
     fontWeight: 'bold',
   },
+  viewColor: {
+    width: '50%',
+    height: 200,
+  }
 });
