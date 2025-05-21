@@ -10,8 +10,8 @@ import {AppRegistry} from 'react-native'; // remains same at all project to rend
 // import App from './App'; 
 // To render your custome page import it instead of App page as below.
 // import login from './src/screen/login';
+import flexBox from './src/screen/flexBox';
 
-import flex from './src/screen/flex';
 import {name as appName} from './app.json'; //remains same at all project to render.
 //AppRegistry.registerComponent(appName, () => App);
 //project1: step2
@@ -20,4 +20,4 @@ import {name as appName} from './app.json'; //remains same at all project to ren
 //project2: step2
 
 //PROJECT3 FLEX
-AppRegistry.registerComponent(appName,() => flex)
+AppRegistry.registerComponent(appName,() => flexBox)

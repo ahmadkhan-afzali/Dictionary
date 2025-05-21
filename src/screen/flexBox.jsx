@@ -8,7 +8,7 @@ import {
 } from 'react-native';
 // import React from 'react'
 
-const flex = () => {
+const flexBox = () => {
   return (
    
      <SafeAreaView style={styles.container}>
@@ -30,7 +30,7 @@ const flex = () => {
   );
 };
 
-export default flex;
+export default flexBox;
 
 const styles = StyleSheet.create({
   container: {
