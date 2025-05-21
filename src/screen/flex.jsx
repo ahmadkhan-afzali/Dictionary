@@ -11,7 +11,7 @@ import {
 const flex = () => {
   return (
    
-     <SafeAreaView style={[styles.container,{flexDirection:'row'}]}>
+     <SafeAreaView style={styles.container}>
       <Text style={styles.text}>flex</Text>
       <View style={styles.box1}> <Text style={styles.boxText}>box1</Text> </View>
       <View style={styles.box2}> <Text style={styles.boxText}>box2</Text> </View>
@@ -35,9 +35,11 @@ export default flex;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'flex-end',
+    flexDirection:'row', // main-axis
+    justifyContent: 'space-evenly',
     backgroundColor: 'black',
-    alignItems: 'center',
+    alignItems: 'stretch',
+    flexWrap:"wrap",
     // How flex works . 1+1+3+3 = 8
     //            1/8,  1/8,  3/8,   3/8.
     //          0.125, 0.125, 0.375  0.375.
@@ -55,32 +57,64 @@ const styles = StyleSheet.create({
     fontWeight:'bold',
   },
   box1: {
-    flex: 1,
-    justifyContent:"flex-end",
-    alignItems:'center',
+    // flex: 1,
+    // justifyContent:"flex-end",
+    // alignItems:'center',
+    alignSelf:'flex-start',
     backgroundColor: 'yellow',
+    height:'20%',
     width: '20%',
     
   },
   box2: {
-    flex: 1,
-    justifyContent:"flex-end",
-    alignItems:'center',
+    // flex: 1,
+    // justifyContent:"flex-end",
+    // alignItems:'center',
     backgroundColor: 'red',
+    height:'20%',
     width: '20%',
   },
   box3: {
-    flex: 3,
-    justifyContent:"flex-end",
-    alignItems:'center',
+    // flex: 3,
+    // justifyContent:"flex-end",
+    // alignItems:'center',
     backgroundColor:'blue',
+    height:'20%',
     width: '20%',
     // height:20,
   },
   box4:{
-    flex:3,
-    justifyContent:"flex-start",
-    alignItems:'center',
+    // flex:3,
+    // justifyContent:"flex-start",
+    // alignItems:'center',
+    backgroundColor:'green',
+    width:'20%',
+  },
+  box4:{
+    // flex:3,
+    // justifyContent:"flex-start",
+    // alignItems:'center',
+    backgroundColor:'green',
+    width:'20%',
+  },
+  box4:{
+    // flex:3,
+    // justifyContent:"flex-start",
+    // alignItems:'center',
+    backgroundColor:'green',
+    width:'20%',
+  },
+  box4:{
+    // flex:3,
+    // justifyContent:"flex-start",
+    // alignItems:'center',
+    backgroundColor:'green',
+    width:'20%',
+  },
+  box4:{
+    // flex:3,
+    // justifyContent:"flex-start",
+    // alignItems:'center',
     backgroundColor:'green',
     width:'20%',
   }
