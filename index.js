@@ -1,23 +1,48 @@
 /**
  * @format
  */
+    ///////////     PROJECT 1 --App.jsx--   ///////////
+//************* * Step 1 
+// import {AppRegistry} from 'react-native'; // remains same at all project to render.
 
-import {AppRegistry} from 'react-native'; // remains same at all project to render.
-// import App from './App'; // project1: step1
-
-// import login from './src/screen/login';
-// ->project2: step1
+//*************** Step 2
 // import App from './App'; 
-// To render your custome page import it instead of App page as below.
-// import login from './src/screen/login';
-import flexBox from './src/screen/flexBox';
 
-import {name as appName} from './app.json'; //remains same at all project to render.
+//*************** Step 3
+// import {name as appName} from './app.json'; //remains same at all project to render.
+
+//*************** Step 4
 //AppRegistry.registerComponent(appName, () => App);
-//project1: step2
 
-// AppRegistry.registerComponent(appName, () => login);
-//project2: step2
 
-//PROJECT3 FLEX
-AppRegistry.registerComponent(appName,() => flexBox)
+    ///////////     PROJECT 2 --login.jsx   ///////////
+// import {AppRegistry} from 'react-native';
+
+// Note. To render your custome project import it instead of App page as below. 
+// import login from './src/screen/login';
+// import {name as appName} from './app.json'; //remains same
+// AppRegistry.registerComponent(appName,() => login);
+
+
+///////////     PROJECT 3 --FlexBox.jsx   ///////////
+// import {AppRegistry} from 'react-native';
+// import FlexBox from './src/screen/FlexBox';
+// import {name as appName} from './app.json'; //remains same
+// AppRegistry.registerComponent(appName,() => FlexBox)
+
+
+///////////     PROJECT 4 --FlatList.jsx   ///////////
+//************* * Step 1
+import {AppRegistry} from 'react-native'; // remains same
+
+//*************** Step 2
+import FlatList from './src/screen/FlatList'; // get changed accroding to project
+
+//********* *     Step 3
+import {name as appName} from './app.json';   // remains same
+
+//************* * Step 4
+AppRegistry.registerComponent(appName,() => FlatList) // FlatList.  name of the project that get runned.
+
+
+
