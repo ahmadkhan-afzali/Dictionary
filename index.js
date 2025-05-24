@@ -36,13 +36,13 @@
 import {AppRegistry} from 'react-native'; // remains same
 
 //*************** Step 2
-import FlatList from './src/screen/FlatList'; // get changed accroding to project
+import Flatlist from './src/screen/Flatlist'; // get changed accroding to project
 
 //********* *     Step 3
 import {name as appName} from './app.json';   // remains same
 
 //************* * Step 4
-AppRegistry.registerComponent(appName,() => FlatList) // FlatList.  name of the project that get runned.
+AppRegistry.registerComponent(appName,() => Flatlist) // FlatList.  name of the project that get runned.
 
 
 
