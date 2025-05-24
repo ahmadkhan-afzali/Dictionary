@@ -33,16 +33,30 @@
 
 ///////////     PROJECT 4 --FlatList.jsx   ///////////
 //************* * Step 1
+// import {AppRegistry} from 'react-native'; // remains same
+
+//*************** Step 2
+// import Flatlist from './src/screen/Flatlist'; // get changed accroding to project
+
+//********* *     Step 3
+// import {name as appName} from './app.json';   // remains same
+
+//************* * Step 4
+// AppRegistry.registerComponent(appName,() => Flatlist) // FlatList.  name of the project that get runned.
+
+
+///////////     PROJECT 5 --UserInput.jsx   ///////////
+//************* * Step 1
 import {AppRegistry} from 'react-native'; // remains same
 
 //*************** Step 2
-import Flatlist from './src/screen/Flatlist'; // get changed accroding to project
+import UserInput from './src/screen/UserInput'; // get changed accroding to project
 
 //********* *     Step 3
 import {name as appName} from './app.json';   // remains same
 
 //************* * Step 4
-AppRegistry.registerComponent(appName,() => Flatlist) // FlatList.  name of the project that get runned.
+AppRegistry.registerComponent(appName,() => UserInput) // FlatList.  name of the project that get runned.
 
 
 
