@@ -3,16 +3,16 @@
  */
     ///////////     PROJECT 1 --App.jsx--   ///////////
 //************* * Step 1 
-// import {AppRegistry} from 'react-native'; // remains same at all project to render.
+import {AppRegistry} from 'react-native'; // remains same at all project to render.
 
 //*************** Step 2
-// import App from './App'; 
+import App from './App'; 
 
 //*************** Step 3
-// import {name as appName} from './app.json'; //remains same at all project to render.
+import {name as appName} from './app.json'; //remains same at all project to render.
 
 //*************** Step 4
-//AppRegistry.registerComponent(appName, () => App);
+AppRegistry.registerComponent(appName, () => App);
 
 
     ///////////     PROJECT 2 --login.jsx   ///////////
@@ -47,16 +47,43 @@
 
 ///////////     PROJECT 5 --UserInput.jsx   ///////////
 //************* * Step 1
-import {AppRegistry} from 'react-native'; // remains same
+// import {AppRegistry} from 'react-native'; // remains same
 
 //*************** Step 2
-import UserInput from './src/screen/UserInput'; // get changed accroding to project
+// import UserInput from './src/screen/UserInput'; // get changed accroding to project
 
 //********* *     Step 3
-import {name as appName} from './app.json';   // remains same
+// import {name as appName} from './app.json';   // remains same
 
 //************* * Step 4
-AppRegistry.registerComponent(appName,() => UserInput) // FlatList.  name of the project that get runned.
+// AppRegistry.registerComponent(appName,() => UserInput) // FlatList.  name of the project that get runned.
 
 
+///////////     PROJECT 6 --StackNavigation.jsx   ///////////
+//************* * Step 1
+// import {AppRegistry} from 'react-native'; // remains same
+
+//*************** Step 2
+// import StackNavigation from './src/screen/StackNavigation'; // get changed accroding to project
+
+//********* *     Step 3
+// import {name as appName} from './app.json';   // remains same
+
+//************* * Step 4
+// AppRegistry.registerComponent(appName,() => StackNavigation) // StackNavigation.  name of the project that get runned.
+
+
+
+///////////     PROJECT 7 --ButtonTypes.jsx   ///////////
+//************* * Step 1
+// import {AppRegistry} from 'react-native'; // remains same
+
+//*************** Step 2
+// import ButtonTypes from './src/screen/ButtonTypes'; // get changed accroding to project
+
+//********* *     Step 3
+// import {name as appName} from './app.json';   // remains same
+
+//************* * Step 4
+// AppRegistry.registerComponent(appName,() => ButtonTypes) // ButtonTypes.  name of the project that get runned.
 
