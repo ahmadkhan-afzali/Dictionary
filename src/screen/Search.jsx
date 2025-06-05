@@ -1,23 +1,31 @@
-import { StyleSheet, Text, View,Button } from 'react-native'
-import React from 'react'
+import {StyleSheet, Text, View, Button} from 'react-native';
+import React from 'react';
 
-const Search = ({navigation,route}) => { // id and name data catched by route
-  const {id,name} = route.params; // tow properties are there inside route.params : id and name 
+const Search = ({navigation, route}) => {
+  // id and name data catched by route
+  const {id, name} = route.params; // tow properties are there inside route.params : id and name
   // above code is destractured form of console.log(route.params);
   return (
     <View>
-      <Text style={styles.textStyle}> Welcome to Search page</Text>
-      <Text style={styles.textStyle}>Data passed from Profile page are{'\n\n\t'} Id:{id} Name:{name}</Text>
-      <Button title='Home' onPress={()=>navigation.navigate("Home")}/>
-    </View>
-  )
-}
+      <Text style={{fontSize: 20, fontWeight: '500'}}>
+        Welcome to Search page
+      </Text>
+      <Text style={{fontSize: 20, fontWeight: '500'}}>
+        Data passed from Profile page are{'\n'} id {id} name {name}
+      </Text>
 
-export default Search
+      <View style={styles.container}>
+        <Button title="Home" onPress={() => navigation.navigate('Home')} />
+      </View>
+    </View>
+  );
+};
+
+export default Search;
 
 const styles = StyleSheet.create({
-    textStyle:{
-        fontSize:30,
-        fontWeight:20,
-    }
-})
+  container: {
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+});
