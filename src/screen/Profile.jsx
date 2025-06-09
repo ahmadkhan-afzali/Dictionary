@@ -8,11 +8,11 @@ const Profile = ({navigation,route}) => {
       <Text style={styles.textStyle}>Welcome to Profile page</Text>
 
       <Text style={{fontSize: 20, fontWeight: '500'}}>id:{id} name:{name}</Text>
-      <Button title="Search" onPress={() => navigation.replace("Profile",{id:1, name:"Ahmad"})} />
+      <Button title="Search" onPress={() => navigation.navigate("Search",{id:1, name:"Ahmad"})} />
       {/* // if it's needed to don't get back to previous page use "replace" attribute as below
       /navigation.replace("Profile",{id:1, name:"Ahmad"} */}
 
-      // pus
+      {/* // pus */}
     </View>
   );
 };
