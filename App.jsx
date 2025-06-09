@@ -11,8 +11,10 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 // import Icon from 'react-native-vector-icons/FontAwesome';
 // import above library but instead of FontAwesome type your own Icon code from library. As below AntDesign-> is code of icon
 import AntDesign from 'react-native-vector-icons/AntDesign';
-import EvilIcons from 'react-native-vector-icons/EvilIcons';
-
+import Feather from 'react-native-vector-icons/Feather';
+import Octicons from 'react-native-vector-icons/Octicons';
+// these three importation are from 'react-native-ocons' each icon has different category.
+// as in above are AntDesign , Feather,Octicons 
 
 
 
@@ -58,6 +60,7 @@ const StackNavigator = () => {
 function TabNavigator(){
   return(
     <Tab.Navigator initialRouteName='Home'
+    
     screenOptions={{
       tabBarActiveTintColor:'blue',
       tabBarInactiveTintColor:'red',
@@ -65,7 +68,9 @@ function TabNavigator(){
         fontSize:20
       },
       tabBarStyle:{
-        height:120,
+        height:80,
+        justifyContent:'center',
+        alignItems:'center'
 
       }
 //          Icon Component
@@ -86,16 +91,20 @@ function TabNavigator(){
       <Tab.Screen name='Home' component={Home}
       options={{
         // tabBarActiveTintColor:'blue',
-        tabBarIcon:() =>(
-          <AntDesign name="home" size={30} color="red" />
+        tabBarIcon:({size,color}) =>(
+          <AntDesign name="home" size={size} color={color} />
           // Note: name is home why? bcs in the library was named as home.
         )
       }}/>
       <Tab.Screen name='Profile' component={Profile} 
       options={{
         tabBarActiveTintColor:'yellow',
-        tabBarIcon:() =>(
-          <AntDesign name="user" size={30} color="blue"/>
+
+        //tabBarIcon:() =>(
+        tabBarIcon:({size,color}) =>(
+          // if you want to give more exact color and size as its original and size then pass through function
+          //<Feather name="user" size={30} color="blue"/>
+          <Feather name="user" size={size} color={color}/>
           // Note: name is user why? bcs in the library was named user.
         )
       }}
@@ -103,9 +112,12 @@ function TabNavigator(){
       <Tab.Screen name='Search' component={Search}
       options={{
         tabBarActiveTintColor:'blue',
-        tabBarIcon:()=>(
-          <EvilIcons name="search" size={38} color="#900" />
+        // tabBarIcon:()=>(
+        //   <Octicons name="search" size={38} color="#900" />
           // Note: name is search why? bcs in the library was named as search.
+
+           tabBarIcon:({size,color})=>(
+          <Octicons name="search" size={size} color={color} />
         )
       }}
       />
