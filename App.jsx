@@ -10,7 +10,11 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 // import Icon from 'react-native-vector-icons/FontAwesome';
 // import above library but instead of FontAwesome type your own Icon code from library. As below AntDesign-> is code of icon
-import Icon from 'react-native-vector-icons/AntDesign';
+import AntDesign from 'react-native-vector-icons/AntDesign';
+import EvilIcons from 'react-native-vector-icons/EvilIcons';
+
+
+
 
 
 
@@ -81,16 +85,18 @@ function TabNavigator(){
     >
       <Tab.Screen name='Home' component={Home}
       options={{
-        tabBarActiveTintColor:'blue',
+        // tabBarActiveTintColor:'blue',
         tabBarIcon:() =>(
-          <Icon name="home" size={22} color="red" />
+          <AntDesign name="home" size={30} color="red" />
+          // Note: name is home why? bcs in the library was named as home.
         )
       }}/>
       <Tab.Screen name='Profile' component={Profile} 
       options={{
         tabBarActiveTintColor:'yellow',
         tabBarIcon:() =>(
-          <Icon name="profile" size={22} color="yellow"/>
+          <AntDesign name="user" size={30} color="blue"/>
+          // Note: name is user why? bcs in the library was named user.
         )
       }}
       />
@@ -98,7 +104,8 @@ function TabNavigator(){
       options={{
         tabBarActiveTintColor:'blue',
         tabBarIcon:()=>(
-          <Icon name="search" size={22} color='blue' />
+          <EvilIcons name="search" size={38} color="#900" />
+          // Note: name is search why? bcs in the library was named as search.
         )
       }}
       />
