@@ -3,16 +3,16 @@
  */
     ///////////     PROJECT 1 --App.jsx--   ///////////
 //************* * Step 1 
-import {AppRegistry} from 'react-native'; // remains same at all project to render.
+// import {AppRegistry} from 'react-native'; // remains same at all project to render.
 
 //*************** Step 2
-import App from './App'; 
+// import App from './App'; 
 
 //*************** Step 3
-import {name as appName} from './app.json'; //remains same at all project to render.
+// import {name as appName} from './app.json'; //remains same at all project to render.
 
 //*************** Step 4
-AppRegistry.registerComponent(appName, () => App);
+// AppRegistry.registerComponent(appName, () => App);
 
 
     ///////////     PROJECT 2 --login.jsx   ///////////
@@ -87,3 +87,20 @@ AppRegistry.registerComponent(appName, () => App);
 //************* * Step 4
 // AppRegistry.registerComponent(appName,() => ButtonTypes) // ButtonTypes.  name of the project that get runned.
 
+
+
+    ///////////   Final project---  PROJECT 8 --StockProject--App.jsx--   ///////////
+//************* * Step 1 
+import {AppRegistry} from 'react-native'; // remains same at all project to render.
+
+//*************** Step 2
+import App from './StockProject/Screens/App'; 
+// why I import, import App from './StockProject/Screens/App';  instead of  import App from './App';
+// bcs my initial app.jsx file was inside StockProject folder that is rendered first.
+
+
+//*************** Step 3
+import {name as appName} from './app.json'; //remains same at all project to render.
+
+//*************** Step 4
+AppRegistry.registerComponent(appName, () => App);

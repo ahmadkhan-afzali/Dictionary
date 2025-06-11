@@ -62,8 +62,8 @@ function TabNavigator(){
     <Tab.Navigator initialRouteName='Home'
     
     screenOptions={{
-      tabBarActiveTintColor:'blue',
-      tabBarInactiveTintColor:'red',
+      // tabBarActiveTintColor:'blue',
+      // tabBarInactiveTintColor:'red',
       tabBarLabelStyle:{
         fontSize:20
       },
